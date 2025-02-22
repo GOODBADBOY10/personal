@@ -12,9 +12,9 @@ const Speech = () => {
         <TypeAnimation
           sequence={[
             1000,
-            "Same substring at the start will only be typed out once, initially",
+            "Building simple, clean and user friendly websites is what i do best",
             1000,
-            "Lorem ipsum dolor sit amet lerinat consectetur adipisicing. ",
+            "I thrive on problem-solving and continuously seeking innovative solutions",
             1000,
           ]}
           wrapper="span"

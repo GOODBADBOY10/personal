@@ -58,15 +58,17 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Web Developer</motion.h2>
+          <motion.h2 variants={awardVariants}>CREATIVE SOFTWARE DEVELOPER</motion.h2>
           <motion.p variants={awardVariants}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            I specialize in crafting scalable and efficient web applications.
+            I design and implement robust, data driven applications.
+            I am eager to apply my skills to new challenges and contribute to innovative projects.
           </motion.p>
           {/* award list */}
           <motion.div variants={awardVariants} className="awardList">
-            <motion.img variants={awardVariants} src="/award1.png" alt="" />
-            <motion.img variants={awardVariants} src="/award2.png" alt="" />
-            <motion.img variants={awardVariants} src="/award3.png" alt="" />
+            <motion.img variants={awardVariants} src="/instagram.png" alt="" />
+            <motion.img variants={awardVariants} src="/facebook.png" alt="" />
+            <motion.img variants={awardVariants} src="/youtube.png" alt="" />
           </motion.div>
         </motion.div>
         {/* SCROLL SVG */}
@@ -114,13 +116,13 @@ const Hero = () => {
           animate="animate"
           className="follow"
         >
-          <motion.a variants={followVariants} href="/">
+          <motion.a variants={followVariants} href="https://github.com/GOODBADBOY10" target="_blank">
             <img src="/instagram.png" alt="" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
+          <motion.a variants={followVariants} href="https://x.com/Ademola102?t=IIyANhmhopVRIe4J1Z2SPQ&s=09" target="_blank">
             <img src="/facebook.png" alt="" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
+          <motion.a variants={followVariants} target="_blank" href="https://www.linkedin.com/in/idris-ademola-a0863b2b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <img src="/youtube.png" alt="" />
           </motion.a>
           <motion.div variants={followVariants} className="followTextContainer">
