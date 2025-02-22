@@ -79,9 +79,10 @@ label {
   }
 
   .cSection:first-child {
-    height: 70%;
+    height: 100%;
   }
   .cSection:last-child {
     height: 30%;
+    display: none;
   }
 }
