@@ -1,5 +1,6 @@
 .hero {
   height: 100%;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
 }
@@ -69,6 +70,7 @@
   padding: 8px;
   background-color: #2f204e;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .scroll {

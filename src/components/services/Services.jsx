@@ -6,6 +6,7 @@ import MugModelContainer from "./mug/MugModelContainer";
 import "./services.css";
 import { motion, useInView } from "motion/react";
 import { useRef, useState } from "react";
+import { Link } from 'react-scroll'
 
 const textVariants = {
   initial: {

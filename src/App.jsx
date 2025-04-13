@@ -5,6 +5,7 @@
 
 import { lazy, Suspense } from "react";
 import LazyLoad from "react-lazyload";
+import { Element, Link } from "react-scroll";
 
 const Hero = lazy(() => import("./components/hero/Hero"));
 const Services = lazy(() => import("./components/services/Services"));
@@ -15,32 +16,34 @@ const App = () => {
   return (
     <div className="container">
       <Suspense fallback={"loading..."}>
-        <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#home">
+        {/* <LazyLoad height={"100vh"} offset={-100}> */}
+          <Element name="hero">
+          <section>
             <Hero />
           </section>
-        </LazyLoad>
-      </Suspense>
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#services">
+          </Element>
+        {/* </LazyLoad> */}
+        {/* <LazyLoad height={"100vh"} offset={-100}> */}
+        <Element name="services">
+          <section>
             <Services />
           </section>
-        </LazyLoad>
-      </Suspense>
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"600vh"} offset={-100}>
+          </Element>
+        {/* </LazyLoad> */}
+        {/* <LazyLoad height={"600vh"} offset={-100}> */}
+        {/* <Element name="portfolio"> */}
           {/* <section id="#portfolio"> */}
-          <Portfolio />
+          {/* <Portfolio /> */}
           {/* </section> */}
-        </LazyLoad>
-      </Suspense>
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"100vh"} offset={-100}>
-          <section id="contact">
+          {/* </Element> */}
+        {/* </LazyLoad> */}
+        {/* <LazyLoad height={"100vh"} offset={-100}> */}
+        <Element name="contact">
+          <section>
             <Contact />
           </section>
-        </LazyLoad>
+          </Element>
+        {/* </LazyLoad> */}
       </Suspense>
     </div>
   );
